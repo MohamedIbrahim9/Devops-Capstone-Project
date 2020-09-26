@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
-# This tags and uploads an image to Docker Hub
+#Kubernetes cluster starting
+minikube start
 
+#show cluster running at least 1
+kubectl config view
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
@@ -21,7 +24,7 @@ kubectl expose deployment nodejs-deployment --type="LoadBalancer"
 # List kubernetes pods
 kubectl get pods 
 
-
+sleep 20s
 #Get application pod name 
 POD=$(kubectl get pods | awk '{print$1}' | grep 'node*')
 

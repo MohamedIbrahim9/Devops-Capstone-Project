@@ -5,10 +5,10 @@ docker ps -aq
 docker stop $(docker ps -aq)
 
 #Remove all containers
-docker rm $(docker ps -aq)
+docker rm $(docker ps -aq) 
 
 #Remove all images
-docker rmi $(docker images -q)
+docker rmi $(docker images -q) 
 
 #list all docker images 
 docker image ls
