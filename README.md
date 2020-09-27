@@ -15,12 +15,12 @@ The project uses Node.JS and Express.
 5)	Building Kubernetes clusters 
 6)	Building Docker containers in pipelines
 
-I have developed a CI/CD pipeline for microservices applications with rolling deployment.
-I have developed Continuous Integration steps such as linting and.
-I also developed Contiguous Deployment like pushing the built Docker containers to the Docker repository.
- Deploying these Docker containers to a  Kubernetes cluster. 
- I have used eksctl to create the Kubernetes cluster.
- i have  used the Jenkins pipline to deploy my Kubernetes cluster using Cloudformation.
+- Developed a CI/CD pipeline for microservices applications with rolling deployment.
+- Developed Continuous Integration steps such as linting and.
+- Developed Contiguous Deployment like pushing the built Docker containers to the Docker repository.
+- Deployed these Docker containers to a  Kubernetes cluster. 
+- Used eksctl to create the Kubernetes cluster.
+- Used the Jenkins pipline to deploy my Kubernetes cluster using Cloudformation.
 
 ![Image of pipline](./screenshots/Depolyment steps.JPG)
 
@@ -87,8 +87,8 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 7. When installation is complete, you are prompted to set up the first admin user. Create the admin user and make note of both the user and password to use in the future.
 
-8. install tidy linter using this command `sudo apt-get install -y tidy`
-9. Add AWS credentails to jenkins which can be found in the following link : https://www.jenkins.io/doc/book/using/using-credentials/
+
+
 
 
 ### Install BlueOcean on Jenkins
@@ -103,3 +103,9 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 sudo systemctl restart jenkins
 ```
 5. Verify everything is working for Blue Ocean by logging in. An "Open Blue Ocean" link should show up in the sidebar. Click it, and it will take you to the "Blue Ocean" screen, where we will have to add a project.
+
+## Additional Steps to compelete the depolyment 
+1. install tidy linter using this command `sudo apt-get install -y tidy`
+2. install Amazon Web Services SDK and Docker Pipelines plugin
+3. Add AWS credentials to jenkins which can be found in the following link : https://www.jenkins.io/doc/book/using/using-credentials/
+4. Add docker credentials from to push the image to dockerhub using the following link : https://appfleet.com/blog/building-docker-images-to-docker-hub-using-jenkins-pipelines/
