@@ -15,6 +15,8 @@ The project uses Node.JS and Express.
 5)	Building Kubernetes clusters 
 6)	Building Docker containers in pipelines
 
+
+## Steps of Project 
 - Developed a CI/CD pipeline for microservices applications with rolling deployment.
 - Developed Continuous Integration steps such as linting and.
 - Developed Contiguous Deployment like pushing the built Docker containers to the Docker repository.
@@ -22,7 +24,6 @@ The project uses Node.JS and Express.
 - Used eksctl to create the Kubernetes cluster.
 - Used the Jenkins pipline to deploy my Kubernetes cluster using Cloudformation.
 
-![Image of pipline](./screenshots/Depolyment steps.JPG)
 
 ## Running the project Locally 
 
