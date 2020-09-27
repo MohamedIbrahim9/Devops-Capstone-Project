@@ -10,7 +10,6 @@ pipeline {
     stage("Build Docker image") {
       steps {
         sh 'docker build -t mohamed/node-web-app .'
-        sh 'docker run -p 49160:8000 -d mohamed/node-web-app'
       }
     }
 
