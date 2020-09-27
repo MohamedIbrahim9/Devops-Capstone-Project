@@ -33,4 +33,4 @@ echo $POD
 
 
 #Forward pod to specifc port
-kubectl port-forward $POD 49161:8080
+kubectl port-forward $POD 49161:8000

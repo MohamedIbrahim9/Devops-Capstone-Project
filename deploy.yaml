@@ -18,5 +18,4 @@ spec:
       - name: node-app
         image: mohamedibrahim9/devops-capstone-app
         ports:
-        - containerPort: 8080
-
+        - containerPort: 8000
